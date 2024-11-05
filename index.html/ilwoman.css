@@ -1,0 +1,392 @@
+body{
+    background: #e7e6f9;
+    margin: 0px;
+}
+
+* {
+
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+
+}
+
+.menu {
+	margin: 0px;
+	width: 25px;
+	height: 300px;
+	padding: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 100px;
+    left: 500px;
+    
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+.nav>li {
+	float: left;
+}
+
+.nav li a {
+	background-color: #7B68EE;
+	color: #FFFF;
+	text-decoration: none;
+	padding: 15px 178px;
+	display: block;
+    z-index: 1;
+}
+
+.nav li hover {
+	background-color: #434343;
+}
+
+.nav li ul {
+
+	display: none;
+	position: absolute;
+	min-width: 140px;
+}
+
+.nav li:hover>ul {
+	display: block;
+}
+
+.nav li ul li {
+	position: relative;
+}
+
+.nav li ul li ul {
+	right: -200px;
+	top: -30px;
+}
+
+
+.logo {
+	background-image: url("logo.jpg");
+	background-color: #cccccc;
+	margin: -350px;
+	padding: -100px;
+	height: 300px;
+	width: 300px;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	top: 50px;
+	left: 350px;
+}
+
+
+div {
+	position: relative;
+    top:0px;
+    left: 00px;
+
+}
+
+
+
+section {
+	display: flex;
+	width: 700px;
+	height: 430px;
+	position: relative;
+    top: 150px;
+    left: 1200px;
+	margin: 0;
+    z-index: 1;
+
+}
+
+section img {
+	width: 0px;
+	flex-grow: 1;
+	object-fit: cover;
+	opacity: .8;
+	transition: .5s ease;
+}
+
+section img:hover {
+	cursor: crosshair;
+	width: 300px;
+	opacity: 1;
+	filter: contrast(120%);
+}
+
+
+
+/*fondo*/
+.context {
+    width: 100%;
+    position: absolute;
+    top:50px;
+    
+}
+
+.area{
+    background: #7B68EE;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height:300px;
+    
+   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+
+.cuadrodetexto {
+   
+    color: #000000;
+    height: 500px;
+    width: 900px;
+    margin: 0px;
+    padding: 10px;
+	font-size:30px;
+	font-family: 'Times New Roman', Times, serif;
+	position: absolute;
+	top: 500px;
+	left: 150px;
+
+}
+
+
+
+.cuadrodetexto2{
+
+    color: #000000;
+    height: 500px;
+    width: 900px;
+    margin: 0px;
+    padding: 10px;
+	font-size:30px;
+	font-family: 'Times New Roman', Times, serif;
+	position: absolute;
+	top: 1200px;
+	left: 1100px;  
+
+}
+
+.title{
+	color: #000000;
+	width: 1200px;
+	height: 100px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 150px;
+	font-weight: 500;
+	position: relative;
+	top: -120px;
+	left: 800px;
+}
+
+.women {
+	background-image: url("OIP.jpeg");
+	background-color: #ffffff;
+	margin: -230px;
+	padding: 0px;
+	height: 450px;
+	width: 600px;
+	top: 1050px;
+	left: 500px;
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.boton {
+    background-color: #7B68EE; 
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    top: 47px;
+    left: 2000px;
+  }
+  /* Cambia el color al pasar el ratón */
+  .boton:hover {
+    background-color: #7c26f3;
+  }
+
+/* Estilos CSS para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 1690px;
+    width: 2260px;
+
+}
+
+/* Estilos para el contenido del footer */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para los botones de redes sociales */
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Estilos para los enlaces en el footer */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para los enlaces en el hover */
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+.registro{
+    background-color: #7B68EE; 
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    top: 47px;
+    left: 2050px;
+  }
+  /* Cambia el color al pasar el ratón */
+  .boton:hover {
+    background-color: #7c26f3;
+}

@@ -1,0 +1,29 @@
+PHP (register.php):
+
+php
+Copy code
+<?php
+// Conexión a la base de datos (Debes configurar tus propias credenciales)
+$host = 'localhost';
+$db = 'nombre_de_la_base_de_datos';
+$user = 'usuario';
+$password = 'contraseña';
+
+$conn = new PDO("mysql:host=$host;dbname=$db", $user, $password);
+$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+// Recibir datos del formulario
+$username = $_POST['username'];
+$email = $_POST['email'];
+$password = password_hash($_POST['password'], PASSWORD_DEFAULT); // Encriptar la contraseña
+
+// Insertar datos en la base de datos
+$sql = "INSERT INTO usuarios (username, email, password) VALUES (:username, :email, :password)";
+$stmt = $conn->prepare($sql);
+$stmt->bindParam(':username', $username);
+$stmt->bindParam(':email', $email);
+$stmt->bindParam(':password', $password);
+$stmt->execute();
+
+echo "Registro exitoso. ¡Bienvenido, $username!";
+?>

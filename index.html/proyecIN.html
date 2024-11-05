@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROYECTO</title>
+  <link rel="stylesheet" href="./proyecto.css">
+</head>
+
+<body>
+
+
+  <div class="area">
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+
+  <div class="logo">
+  </div>
+  <div class="menu">
+  </div>
+
+  <div class="title">I L W O M A N</div>
+
+  <div class="women"></div>
+
+  <a href="./PROYECTOO.html" class="boton">IN/ES</a>
+
+ 
+
+
+</body>
+
+<ul class="nav">
+
+    <li><a href="./ILWOMAN.html">START</a>
+
+        <ul>
+    
+        </ul>
+    
+      </li>
+      <li><a href="./quienes somos.html">WHO WE ARE</a>
+    
+        <ul>
+    
+          <li><a href="./PLANES.html">STRATEGIC PLAN</a>
+    
+          <li><a href="./PROYECTOO.html">PROJECT</a>
+
+          <li><a href="./marco teorico.pdf">THEORETICAL FRAMEWORK</a>
+       
+          <li><a href="./marco legal.pdf">LEGAL FRAMEWORK</a>
+    
+        </ul>
+      </li>
+    
+      <li><a href="#">TECHNOLOGICAL SOLUTION</a>
+    
+        <ul>
+    
+        </ul>
+      </li>
+    
+      <li><a href="./evidencias.html">EVIDENCE</a>
+    <ul>
+
+    </ul>
+  </li>
+
+ 
+    
+    <div class="menu">
+      <button class="menu-button1" onclick="showImage('image1')">MISION</button>
+      <button class="menu-button2" onclick="showImage('image2')">VISION</button>
+      <button class="menu-button3" onclick="showImage('image3')">VALORES</button>
+  </div>
+
+  <div class="image-container">
+      <center><img id="image1" class="image" src="./marco1.jpg"><center>
+        <center><img id="image2" class="image" src="./vision.jpg"><center>
+          <center><img id="image3" class="image" src="./valores corporativos.jpg"><center>
+  </div>
+
+  <script>
+    function showImage(imageId) {
+        // Ocultar todas las imágenes
+        const images = document.querySelectorAll('.image');
+        images.forEach(image => image.classList.remove('active'));
+
+        // Mostrar la imagen seleccionada
+        const selectedImage = document.getElementById(imageId);
+        selectedImage.classList.add('active');
+    }
+</script>
+</body>
+</html>
